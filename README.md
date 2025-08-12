@@ -17,10 +17,6 @@ realistic projects.
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections
-you keep.**
 
 ## Overview
 
@@ -32,16 +28,17 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![Screenshot](./screenshot.png)
 
 ### Links
 
-- Solution URL:
-  [Add solution URL here](https://github.com/kmje405/fem-blog-preview-card)
-- Live Site URL:
-  [Add live site URL here](https://fem-blog-preview-card-kmje405.netlify.app/)
+- Solution URL: [Github](https://github.com/kmje405/fem-blog-preview-card)
+- Live Site URL: [Live Site](https://fem-blog-preview-card-kmje405.netlify.app/)
 
 ## My process
+
+I started building this from the mobile breakpoint first, then simply adjusted
+the card max-width on larger screens via a tablet and up breakpoint.
 
 ### Built with
 
@@ -58,7 +55,7 @@ interactivity to speak of.
 
 ### Useful resources
 
-- [Example resource 1](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content) -
+- [fit-content](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content) -
   Had to look up this css property.
 
 ## Author
