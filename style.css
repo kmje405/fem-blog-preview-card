@@ -2,7 +2,7 @@
   font-family: "Figtree";
   src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
   font-weight: 800;
-  font-style: bold;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -32,26 +32,26 @@
   /* Text Preset 1 - Figtree Extra Bold */
   --fs-preset-1: 1.45rem; /* 24px */
   --fw-preset-1: 800; /* Extra Bold */
-  --lh-preset-1: 150%; /* 150% Line Height */
-  --ls-preset-1: 0px; /* 0px Letter Spacing */
+  --lh-preset-1: 150%;
+  --ls-preset-1: 0px;
 
   /* Text Preset 2 - Figtree Medium */
   --fs-preset-2: 1rem; /* 16px */
   --fw-preset-2: 500; /* Medium */
-  --lh-preset-2: 150%; /* 150% Line Height */
-  --ls-preset-2: 0px; /* 0px Letter Spacing */
+  --lh-preset-2: 150%;
+  --ls-preset-2: 0px;
 
   /* Text Preset 3 - Figtree Medium */
   --fs-preset-3: 0.875rem; /* 14px */
   --fw-preset-3: 500; /* Medium */
-  --lh-preset-3: 150%; /* 150% Line Height */
-  --ls-preset-3: 0px; /* 0px Letter Spacing */
+  --lh-preset-3: 150%;
+  --ls-preset-3: 0px;
 
   /* Text Preset 3 Bold - Figtree Extra Bold */
   --fs-preset-3-bold: 0.875rem; /* 14px */
   --fw-preset-3-bold: 800; /* Extra Bold */
-  --lh-preset-3-bold: 150%; /* 150% Line Height */
-  --ls-preset-3-bold: 0px; /* 0px Letter Spacing */
+  --lh-preset-3-bold: 150%;
+  --ls-preset-3-bold: 0px;
 }
 
 body {
@@ -59,6 +59,7 @@ body {
   font-family: var(--ff-figtree);
 }
 
+/* Block */
 .card {
   max-width: 21rem;
   justify-self: center;
@@ -69,19 +70,17 @@ body {
   box-shadow: 7px 7px 0px black;
 }
 
-.card:hover .title {
-  color: var(--c-accent-yellow);
-}
-
-.card-banner {
-  border-radius: 0.625rem;
-  margin-bottom: 1.5rem;
-}
-.container {
+/* Elements */
+.card__container {
   padding: 1.5rem;
 }
 
-.category-label {
+.card__banner {
+  border-radius: 0.625rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__tag {
   display: block;
   background-color: var(--c-accent-yellow);
   padding: 0.25rem 0.75rem;
@@ -90,23 +89,32 @@ body {
   width: fit-content;
   border-radius: 0.25rem;
 }
-.publication-date {
+
+.card__date {
   font-size: var(--fs-preset-3);
   font-weight: var(--fw-preset-3);
   line-height: var(--lh-preset-3);
   letter-spacing: var(--ls-preset-3);
 }
-.title {
-  word-wrap: nowrap;
+
+.card__title {
+  text-wrap: pretty;
   font-weight: var(--fw-preset-1);
   line-height: var(--lh-preset-1);
   letter-spacing: var(--ls-preset-1);
   font-size: var(--fs-preset-1);
   transition: color 300ms ease-in-out;
 }
-.article-summary {
+
+.card__summary {
+  font-size: var(--fs-preset-2);
+  font-weight: var(--fw-preset-2);
+  line-height: var(--lh-preset-2);
+  letter-spacing: var(--ls-preset-2);
+  color: var(--c-gray-500);
 }
-.author-info {
+
+.card__author {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -114,28 +122,40 @@ body {
   font-weight: var(--fw-preset-3-bold);
   letter-spacing: var(--ls-preset-3-bold);
   line-height: var(--lh-preset-3-bold);
+  color: var(--c-gray-950);
 }
 
-.author-info img {
+.card__author-avatar {
   width: 2rem;
   height: 2rem;
+  border-radius: 50%;
+}
+
+.card__author-name {
+  display: inline-block;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card:hover .card__title {
+  color: var(--c-accent-yellow);
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
 }
-.attribution a {
+.attribution__link {
   color: hsl(228, 45%, 44%);
 }
-.group {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
 
+/* Responsive */
 @media (min-width: 48rem) {
   .card {
-    max-width: 24.0625rem;
+    max-width: clamp(24rem, 28vw, 26rem);
   }
 }

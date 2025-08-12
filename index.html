@@ -3,39 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="/assets/images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Blog preview card</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <article class="card">
-      <div class="container">
+      <div class="card__container">
         <img
-          class="card-banner"
-          src="/assets//images/illustration-article.svg"
+          class="card__banner"
+          src="/assets/images/illustration-article.svg"
           alt=""
         />
 
-        <span class="category-label">Learning</span>
-        <div class="group">
-          <span class="publication-date">Published 21 Dec 2023</span>
-          <h3 class="title">HTML & CSS foundations</h3>
-          <p class="article-summary">
+        <span class="card__tag card__tag--learning">Learning</span>
+
+        <div class="card__content">
+          <time class="card__date" datetime="2023-12-21"
+            >Published 21 Dec 2023</time
+          >
+          <h3 class="card__title">HTML &amp; CSS foundations</h3>
+          <p class="card__summary">
             These languages are the backbone of every website, defining
             structure, content, and presentation.
           </p>
-          <div class="author-info">
-            <img src="/assets/images/image-avatar.webp" alt="" />
-            Greg Hooper
+          <div class="card__author">
+            <img
+              class="card__author-avatar"
+              src="/assets/images/image-avatar.webp"
+              alt="Photo of Greg Hooper"
+            />
+            <span class="card__author-name">Greg Hooper</span>
           </div>
         </div>
       </div>
@@ -43,9 +47,17 @@
 
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://eastlandjones.com/">Kevin Jones-Eastland</a>.
+      <a
+        class="attribution__link"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Frontend Mentor </a
+      >. Coded by
+      <a class="attribution__link" href="https://eastlandjones.com/"
+        >Kevin Jones-Eastland</a
+      >.
     </div>
   </body>
 </html>
