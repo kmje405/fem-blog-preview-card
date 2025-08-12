@@ -63,7 +63,7 @@ body {
 .card {
   max-width: 21rem;
   justify-self: center;
-  margin-block: 3rem;
+  margin-block: clamp(3rem);
   background-color: var(--c-white);
   border: 1px solid black;
   border-radius: 1.25rem;
