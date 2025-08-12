@@ -127,12 +127,16 @@ body {
 .card__author {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   font-size: var(--fs-preset-3-bold);
   font-weight: var(--fw-preset-3-bold);
   letter-spacing: var(--ls-preset-3-bold);
   line-height: var(--lh-preset-3-bold);
   color: var(--c-gray-950);
+}
+
+.card__author img {
+  width: 2rem;
 }
 
 .card__author-name {
