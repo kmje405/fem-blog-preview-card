@@ -153,10 +153,6 @@ body {
   color: var(--c-accent-yellow);
 }
 
-footer {
-  margin: 1rem;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
