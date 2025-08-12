@@ -57,6 +57,9 @@
 body {
   background-color: var(--c-accent-yellow);
   font-family: var(--ff-figtree);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
 }
 
 /* Block */
