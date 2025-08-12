@@ -59,14 +59,14 @@ body {
   font-family: var(--ff-figtree);
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 20vh;
 }
 
 /* Block */
 .card {
   max-width: 21rem;
-  justify-self: center;
-  margin-block: clamp(3rem);
+  margin-block: 3rem;
   background-color: var(--c-white);
   border: 1px solid black;
   border-radius: 1.25rem;
