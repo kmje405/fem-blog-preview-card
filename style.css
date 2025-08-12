@@ -69,27 +69,40 @@ body {
   box-shadow: 7px 7px 0px black;
 }
 
+.card:hover .title {
+  color: var(--c-accent-yellow);
+}
+
 .card-banner {
   border-radius: 0.625rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .container {
   padding: 1.5rem;
 }
 
 .category-label {
+  display: block;
   background-color: var(--c-accent-yellow);
   padding: 0.25rem 0.75rem;
+  margin-bottom: 0.75rem;
   font-weight: var(--fw-preset-1);
+  width: fit-content;
+  border-radius: 0.25rem;
 }
 .publication-date {
-  display: flex;
+  font-size: var(--fs-preset-3);
+  font-weight: var(--fw-preset-3);
+  line-height: var(--lh-preset-3);
+  letter-spacing: var(--ls-preset-3);
 }
 .title {
   word-wrap: nowrap;
+  font-weight: var(--fw-preset-1);
   line-height: var(--lh-preset-1);
   letter-spacing: var(--ls-preset-1);
   font-size: var(--fs-preset-1);
+  transition: color 300ms ease-in-out;
 }
 .article-summary {
 }
@@ -97,6 +110,10 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-size: var(--fs-preset-3-bold);
+  font-weight: var(--fw-preset-3-bold);
+  letter-spacing: var(--ls-preset-3-bold);
+  line-height: var(--lh-preset-3-bold);
 }
 
 .author-info img {
@@ -114,5 +131,5 @@ body {
 .group {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
