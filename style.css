@@ -90,6 +90,11 @@ body {
   font-weight: var(--fw-preset-1);
   width: fit-content;
   border-radius: 0.25rem;
+  list-style: none;
+}
+
+.card__tag li {
+  list-style: none;
 }
 
 .card__date {
