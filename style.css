@@ -76,8 +76,10 @@ body {
 }
 
 .card__banner {
+  width: 100%;
   border-radius: 0.625rem;
   margin-bottom: 1.5rem;
+  justify-self: center;
 }
 
 .card__tag {
@@ -123,12 +125,6 @@ body {
   letter-spacing: var(--ls-preset-3-bold);
   line-height: var(--lh-preset-3-bold);
   color: var(--c-gray-950);
-}
-
-.card__author-avatar {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
 }
 
 .card__author-name {
