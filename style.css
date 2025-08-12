@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --c-accent-yellow: hsl(47, 88%, 63%);
+  --c-gray-950: hsl(0, 0%, 7%);
+  --c-gray-500: hsl(0, 0%, 42%);
+  --c-white: hsl(0, 0%, 100%);
+
+  /* Breakpoint Variables */
+  --bp-mobile: 23.4375rem; /* 375px */
+  --bp-tablet: 48rem; /* 768px */
+  --bp-desktop: 64rem; /* 1024px */
+  --bp-desktop-lg: 90rem; /* 1440px */
+
+  /* Typography Variables */
+  --ff-figtree: "Figtree", sans-serif;
+
+  /* Text Preset 1 - Figtree Extra Bold */
+  --fs-preset-1: 1.5rem; /* 24px */
+  --fw-preset-1: 800; /* Extra Bold */
+  --lh-preset-1: 150%; /* 150% Line Height */
+  --ls-preset-1: 0px; /* 0px Letter Spacing */
+
+  /* Text Preset 2 - Figtree Medium */
+  --fs-preset-2: 1rem; /* 16px */
+  --fw-preset-2: 500; /* Medium */
+  --lh-preset-2: 150%; /* 150% Line Height */
+  --ls-preset-2: 0px; /* 0px Letter Spacing */
+
+  /* Text Preset 3 - Figtree Medium */
+  --fs-preset-3: 0.875rem; /* 14px */
+  --fw-preset-3: 500; /* Medium */
+  --lh-preset-3: 150%; /* 150% Line Height */
+  --ls-preset-3: 0px; /* 0px Letter Spacing */
+
+  /* Text Preset 3 Bold - Figtree Extra Bold */
+  --fs-preset-3-bold: 0.875rem; /* 14px */
+  --fw-preset-3-bold: 800; /* Extra Bold */
+  --lh-preset-3-bold: 150%; /* 150% Line Height */
+  --ls-preset-3-bold: 0px; /* 0px Letter Spacing */
+}
+
+body {
+  background-color: var(--c-accent-yellow);
+  font-family: var(--ff-figtree);
+}
+
+.card {
+  max-width: 21rem;
+  justify-self: center;
+  margin-block: 3rem;
+  background-color: var(--c-white);
+  border: 1px solid black;
+  border-radius: 1.25rem;
+  box-shadow: 7px 7px 0px black;
+}
+
+.card-banner {
+  border-radius: 0.625rem;
+  margin-bottom: 2rem;
+}
+.container {
+  padding: 1.5rem;
+}
+
+.category-label {
+  background-color: var(--c-accent-yellow);
+  padding: 0.25rem 0.75rem;
+  font-weight: var(--fw-preset-1);
+}
+.publication-date {
+  display: flex;
+}
+.title {
+  word-wrap: nowrap;
+  line-height: var(--lh-preset-1);
+  letter-spacing: var(--ls-preset-1);
+  font-size: var(--fs-preset-1);
+}
+.article-summary {
+}
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-info img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
